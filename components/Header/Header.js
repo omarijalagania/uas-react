@@ -100,7 +100,7 @@ function classNames(...classes) {
 
 export default function Header() {
   return (
-    <div className="relative bg-hero bg-cover h-full bg-gray-50 rom-slate-600">
+    <div className="relative bg-hero bg-cover h-screen bg-gray-50 rom-slate-600">
       <Popover className="fixed w-full top-0 z-50 bg-white shadow">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">

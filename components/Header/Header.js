@@ -113,7 +113,7 @@ export default function Header() {
   return (
     <div className="relative bg-hero bg-cover h-screen bg-gray-50 rom-slate-600">
       <Popover
-        className={`fixed w-full top-0 z-50 shadow ${
+        className={`fixed w-full top-0 z-50 ${
           !scroll ? "bg-transparent" : "bg-white"
         }`}
       >
@@ -136,7 +136,7 @@ export default function Header() {
               </Popover.Button>
             </div>
             <Popover.Group as="nav" className="hidden md:flex space-x-10">
-              <Popover className="relative">
+              {/* <Popover className="relative">
                 {({ open }) => (
                   <>
                     <Popover.Button
@@ -209,22 +209,50 @@ export default function Header() {
                     </Transition>
                   </>
                 )}
-              </Popover>
+              </Popover> */}
 
               <a
                 href="#"
-                className="text-base font-medium text-gray-500 hover:text-gray-900"
+                className={`text-base font-medium ${
+                  !scroll
+                    ? "text-gray-300 hover:text-gray-400"
+                    : "text-gray-500 hover:text-gray-900"
+                }`}
               >
-                Pricing
+                მარკირება
               </a>
               <a
                 href="#"
-                className="text-base font-medium text-gray-500 hover:text-gray-900"
+                className={`text-base font-medium ${
+                  !scroll
+                    ? "text-gray-300 hover:text-gray-400"
+                    : "text-gray-500 hover:text-gray-900"
+                }`}
               >
-                Docs
+                საჰაერო სივრცე
+              </a>
+              <a
+                href="#"
+                className={`text-base font-medium ${
+                  !scroll
+                    ? "text-gray-300 hover:text-gray-400"
+                    : "text-gray-500 hover:text-gray-900"
+                }`}
+              >
+                საჭირო ინფორმაცია
+              </a>
+              <a
+                href="#"
+                className={`text-base font-medium ${
+                  !scroll
+                    ? "text-gray-300 hover:text-gray-400"
+                    : "text-gray-500 hover:text-gray-900"
+                }`}
+              >
+                კონტაქტი
               </a>
 
-              <Popover className="relative">
+              {/* <Popover className="relative">
                 {({ open }) => (
                   <>
                     <Popover.Button
@@ -313,9 +341,9 @@ export default function Header() {
                     </Transition>
                   </>
                 )}
-              </Popover>
+              </Popover> */}
             </Popover.Group>
-            <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+            {/* <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
               <a
                 href="#"
                 className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
@@ -328,7 +356,7 @@ export default function Header() {
               >
                 Sign up
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
 

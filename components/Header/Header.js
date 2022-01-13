@@ -19,36 +19,29 @@ import { ChevronDownIcon } from "@heroicons/react/solid";
 
 const features = [
   {
-    name: "Analytics",
+    name: "მარკირება",
     href: "#",
     description:
       "Get a better understanding of where your traffic is coming from.",
     icon: ChartBarIcon,
   },
   {
-    name: "Engagement",
+    name: "საჰაერო ინფორმაცია",
     href: "#",
     description: "Speak directly to your customers in a more meaningful way.",
     icon: CursorClickIcon,
   },
   {
-    name: "Security",
+    name: "საჭირო ინფორმაცია",
     href: "#",
     description: "Your customers' data will be safe and secure.",
     icon: ShieldCheckIcon,
   },
   {
-    name: "Integrations",
+    name: "კონტაქტი",
     href: "#",
     description: "Connect with third-party tools that you're already using.",
     icon: ViewGridIcon,
-  },
-  {
-    name: "Automations",
-    href: "#",
-    description:
-      "Build strategic funnels that will drive your customers to convert",
-    icon: RefreshIcon,
   },
 ];
 const callsToAction = [
@@ -123,14 +116,14 @@ export default function Header() {
               <a href="#">
                 <span className="sr-only">Workflow</span>
                 <img
-                  className="h-8 w-auto sm:h-10"
+                  className="h-14 w-14"
                   src="../img/logo.png"
-                  alt=""
+                  alt="UAS-logo"
                 />
               </a>
             </div>
             <div className="-mr-2 -my-2 md:hidden">
-              <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+              <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sky-500">
                 <span className="sr-only">Open menu</span>
                 <MenuIcon className="h-6 w-6" aria-hidden="true" />
               </Popover.Button>
@@ -142,7 +135,7 @@ export default function Header() {
                     <Popover.Button
                       className={classNames(
                         open ? "text-gray-900" : "text-gray-500",
-                        "group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        "group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500"
                       )}
                     >
                       <span>Solutions</span>
@@ -174,7 +167,7 @@ export default function Header() {
                                 className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                               >
                                 <item.icon
-                                  className="flex-shrink-0 h-6 w-6 text-indigo-600"
+                                  className="flex-shrink-0 h-6 w-6 text-sky-600"
                                   aria-hidden="true"
                                 />
                                 <div className="ml-4">
@@ -258,7 +251,7 @@ export default function Header() {
                     <Popover.Button
                       className={classNames(
                         open ? "text-gray-900" : "text-gray-500",
-                        "group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        "group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500"
                       )}
                     >
                       <span>More</span>
@@ -290,7 +283,7 @@ export default function Header() {
                                 className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                               >
                                 <item.icon
-                                  className="flex-shrink-0 h-6 w-6 text-indigo-600"
+                                  className="flex-shrink-0 h-6 w-6 text-sky-600"
                                   aria-hidden="true"
                                 />
                                 <div className="ml-4">
@@ -328,7 +321,7 @@ export default function Header() {
                             <div className="mt-5 text-sm">
                               <a
                                 href="#"
-                                className="font-medium text-indigo-600 hover:text-indigo-500"
+                                className="font-medium text-sky-600 hover:text-sky-500"
                               >
                                 {" "}
                                 View all posts{" "}
@@ -352,7 +345,7 @@ export default function Header() {
               </a>
               <a
                 href="#"
-                className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+                className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-sky-600 hover:bg-sky-700"
               >
                 Sign up
               </a>
@@ -378,13 +371,13 @@ export default function Header() {
                 <div className="flex items-center justify-between">
                   <div>
                     <img
-                      className="h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                      alt="Workflow"
+                      className="h-14 w-14"
+                      src="../img/logo.png"
+                      alt="UAS-logo"
                     />
                   </div>
                   <div className="-mr-2">
-                    <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                    <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sky-600">
                       <span className="sr-only">Close menu</span>
                       <XIcon className="h-6 w-6" aria-hidden="true" />
                     </Popover.Button>
@@ -399,7 +392,7 @@ export default function Header() {
                         className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                       >
                         <item.icon
-                          className="flex-shrink-0 h-6 w-6 text-indigo-600"
+                          className="flex-shrink-0 h-6 w-6 text-sky-600"
                           aria-hidden="true"
                         />
                         <span className="ml-3 text-base font-medium text-gray-900">
@@ -410,7 +403,7 @@ export default function Header() {
                   </nav>
                 </div>
               </div>
-              <div className="py-6 px-5 space-y-6">
+              {/* <div className="py-6 px-5 space-y-6">
                 <div className="grid grid-cols-2 gap-y-4 gap-x-8">
                   <a
                     href="#"
@@ -438,7 +431,7 @@ export default function Header() {
                 <div>
                   <a
                     href="#"
-                    className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+                    className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-sky-600 hover:bg-sky-700"
                   >
                     Sign up
                   </a>
@@ -446,13 +439,13 @@ export default function Header() {
                     Existing customer?
                     <a
                       href="#"
-                      className="text-indigo-600 hover:text-indigo-500"
+                      className="text-sky-600 hover:text-sky-500"
                     >
                       Sign in
                     </a>
                   </p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </Popover.Panel>
         </Transition>
@@ -463,7 +456,7 @@ export default function Header() {
           <div className="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span className="block xl:inline">Data to enrich your</span>{" "}
-              <span className="block text-indigo-600 xl:inline">
+              <span className="block text-sky-600 xl:inline">
                 online business
               </span>
             </h1>
@@ -476,7 +469,7 @@ export default function Header() {
               <div className="rounded-md shadow">
                 <a
                   href="#"
-                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-sky-600 hover:bg-sky-700 md:py-4 md:text-lg md:px-10"
                 >
                   Get started
                 </a>
@@ -484,7 +477,7 @@ export default function Header() {
               <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
                 <a
                   href="#"
-                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
+                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-sky-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
                 >
                   Live demo
                 </a>

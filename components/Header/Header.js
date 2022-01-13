@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import {
   BookmarkAltIcon,
@@ -98,10 +98,24 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
+
+
 export default function Header() {
+
+  /* Get scroll for transparent header */
+  const [scroll, setScroll] = useState(0);
+  useEffect(() => {
+    const onScroll = () => setScroll(window.pageYOffset);
+    // clean up code
+    window.removeEventListener('scroll', onScroll);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);  
+  /* Get scroll for transparent header END */
+  
   return (
     <div className="relative bg-hero bg-cover h-screen bg-gray-50 rom-slate-600">
-      <Popover className="fixed w-full top-0 z-50 bg-white shadow">
+      <Popover className={`fixed w-full top-0 z-50 shadow ${!scroll ? 'bg-white' : 'bg-transparent'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
             <div className="flex justify-start lg:w-0 lg:flex-1">

@@ -4,7 +4,7 @@ function DroneLabel() {
   return (
     <section className="h-screen bg-gray-100 p-5">
       <div className="flex items-center justify-around">
-        <div className="h-screen w-1/2 text-center">
+        <div className="h-screen w-1/2 text-center animate__animated animate__slideInLeft">
           <p className="p-7">მარკირების ინსტრუქცია</p>
           <p className="p-7">
             ექსპლუატაციის დაწყებამდე აუცილებელია უპილოტო საჰაერო ხომალდის
@@ -20,7 +20,8 @@ function DroneLabel() {
             რეგისტრაციის ნომრის ადვილად მოცილება, დაზიანება ან წაშლა.
           </p>
         </div>
-        <div className="w-96 h-90">
+
+        <div className="w-96 h-90 animate__animated animate__slideInRight">
           <img src="../img/drone-label.jpeg" alt="drone label" />
         </div>
       </div>

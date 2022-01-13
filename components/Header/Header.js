@@ -100,8 +100,8 @@ function classNames(...classes) {
 
 export default function Header() {
   return (
-    <div className="relative bg-hero hero bg-gray-50">
-      <Popover className="relative z-50 bg-white shadow">
+    <div className="relative bg-hero bg-cover h-full  bg-gray-50 rom-slate-600">
+      <Popover className="stiky top-0 z-50 bg-white shadow">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
             <div className="flex justify-start lg:w-0 lg:flex-1">
@@ -448,13 +448,6 @@ export default function Header() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
-          <img
-            className="absolute inset-0 w-full h-full object-cover"
-            src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
-            alt=""
-          />
         </div>
       </main>
     </div>

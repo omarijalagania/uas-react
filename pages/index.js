@@ -1,11 +1,11 @@
 import Header from "../components/Header/Header";
-import Test from "../components/Test";
+import Feature from "../components/Feature";
 
 function Home() {
   return (
     <>
       <Header />
-      <Test />
+      <Feature />
     </>
   );
 }

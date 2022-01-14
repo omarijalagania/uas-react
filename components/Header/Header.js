@@ -17,6 +17,8 @@ import {
 } from "@heroicons/react/outline";
 import { ChevronDownIcon } from "@heroicons/react/solid";
 
+import Link from "next/link";
+
 const features = [
   {
     name: "მარკირება",
@@ -476,12 +478,11 @@ export default function Header() {
             </h1>
             <div className="mt-10 sm:flex sm:justify-center lg:justify-center">
               <button className="rounded-full shadow">
-                <a
-                  href="#"
-                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-sky-600 hover:bg-sky-700 md:py-4 md:text-lg md:px-10"
-                >
-                  შესვლა
-                </a>
+                <div className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-sky-600 hover:bg-sky-700 md:py-4 md:text-lg md:px-10">
+                  <Link href="/user-login">
+                    <a>შესვლა</a>
+                  </Link>
+                </div>
               </button>
               <button className="mt-3 rounded-full shadow sm:mt-0 sm:ml-3">
                 <a

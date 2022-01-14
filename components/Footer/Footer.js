@@ -51,16 +51,16 @@ const Footer = () => {
           დანიშნულების ავიაციის დეპარტამენტი
         </h2>
         {/* Contact Section */}
-        <div className="flex lg:flex-row flex-col items-center pt-12 ">
-          <div class="text-zinc-300 px-20 py-10 ">
+        <div className="flex lg:flex-row flex-col  pt-12 ">
+          <div class="text-zinc-300 lg:px-20 md:px-0 py-10 ">
             <div>
-              <h6 class=" uppercase  mb-4 flex justify-center font-bold md:justify-start">
+              <h6 class=" uppercase  mb-4 flex  font-bold md:justify-start">
                 კონტაქტი
               </h6>
-              <p class=" uppercase  mb-4 flex justify-center  md:justify-start">
+              <p class=" uppercase  mb-4 flex   md:justify-start">
                 სამოქალაქო ავიაციის სააგენტო:
               </p>
-              <p class="flex items-center justify-center md:justify-start mb-4">
+              <p class="flex items-center  md:justify-start mb-4">
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -78,7 +78,7 @@ const Footer = () => {
                 </svg>
                 0114, თბილისი, I ხეივნის ქუჩის დასაწყისი
               </p>
-              <p class="flex items-center justify-center md:justify-start mb-4">
+              <p class="flex items-center  md:justify-start mb-4">
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -96,7 +96,7 @@ const Footer = () => {
                 </svg>
                 office@gcaa.ge
               </p>
-              <p class="flex items-center justify-center md:justify-start mb-4">
+              <p class="flex items-center  md:justify-start mb-4">
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -116,10 +116,10 @@ const Footer = () => {
               </p>
             </div>
             <div>
-              <p class=" uppercase pt-4 mb-4 flex justify-center  md:justify-start">
+              <p class=" uppercase pt-4 mb-4 flex   md:justify-start">
                 დეპარტამენტის უფროსი:
               </p>
-              <p class="flex items-center justify-center md:justify-start mb-4 ">
+              <p class="flex items-center  md:justify-start mb-4 ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6 mr-2"
@@ -134,7 +134,7 @@ const Footer = () => {
                 </svg>
                 აკაკი მაისაია
               </p>
-              <p class="flex items-center justify-center md:justify-start mb-4">
+              <p class="flex items-center  md:justify-start mb-4">
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -153,7 +153,7 @@ const Footer = () => {
                 UAS-GA@gcaa.ge
               </p>
             </div>
-            <p class="flex items-center justify-center md:justify-start mb-4">
+            <p class="flex items-center  md:justify-start mb-4">
               <svg
                 aria-hidden="true"
                 focusable="false"

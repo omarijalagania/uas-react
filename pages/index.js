@@ -4,6 +4,7 @@ import DroneLabel from "../components/Header/DroneLabel";
 
 //animations
 import "animate.css";
+import Footer from "../components/Footer/Footer";
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
       <Header />
       <Feature />
       <DroneLabel />
+      <Footer/>
     </>
   );
 }

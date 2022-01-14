@@ -107,7 +107,7 @@ export default function Header() {
     <div className="relative bg-hero bg-cover h-screen bg-gray-50 rom-slate-600">
       <Popover
         className={`fixed w-full top-0 z-50 ${
-          !scroll ? "bg-transparent" : "bg-white"
+          !scroll ? "bg-transparent" : `bg-white ${scroll <=25 ? 'opacity-5' : scroll <= 50 ? 'opacity-10' : scroll <= 75 ? 'opacity-20' : scroll <= 100 ? 'opacity-25' : 'opacity-100'} `
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6">

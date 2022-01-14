@@ -107,7 +107,19 @@ export default function Header() {
     <div className="relative bg-hero bg-cover h-screen bg-gray-50 rom-slate-600">
       <Popover
         className={`fixed w-full top-0 z-50 ${
-          !scroll ? "bg-transparent" : `bg-white ${scroll <=25 ? 'opacity-5' : scroll <= 50 ? 'opacity-10' : scroll <= 75 ? 'opacity-20' : scroll <= 100 ? 'opacity-25' : 'opacity-100'} `
+          !scroll
+            ? "bg-transparent"
+            : `bg-white ${
+                scroll <= 25
+                  ? "opacity-5"
+                  : scroll <= 50
+                  ? "opacity-10"
+                  : scroll <= 75
+                  ? "opacity-20"
+                  : scroll <= 100
+                  ? "opacity-25"
+                  : "opacity-100"
+              } `
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -451,7 +463,7 @@ export default function Header() {
         </Transition>
       </Popover>
 
-      <main className="lg:relative">
+      <main className="lg:relative from-neutral-900 z-99">
         <div className="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
           <div className="mx-auto text-center px-4 lg:w-1/2 sm:px-8 xl:pr-16">
             <h1 className="text-4xl tracking-tight font-extrabold text-gray-300 pt-40 ">

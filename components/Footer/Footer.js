@@ -52,21 +52,21 @@ const Footer = () => {
         </h2>
         {/* Contact Section */}
         <div className="flex lg:flex-row flex-col  pt-12 ">
-          <div class="text-zinc-300 lg:px-20 md:px-0 py-10 ">
+          <div className="text-zinc-300 lg:px-20 md:px-0 py-10 ">
             <div>
-              <h6 class=" uppercase  mb-4 flex  font-bold md:justify-start">
+              <h6 className=" uppercase  mb-4 flex  font-bold md:justify-start">
                 კონტაქტი
               </h6>
-              <p class=" uppercase  mb-4 flex   md:justify-start">
+              <p className=" uppercase  mb-4 flex   md:justify-start">
                 სამოქალაქო ავიაციის სააგენტო:
               </p>
-              <p class="flex items-center  md:justify-start mb-4">
+              <p className="flex items-center  md:justify-start mb-4">
                 <svg
                   aria-hidden="true"
                   focusable="false"
                   data-prefix="fas"
                   data-icon="home"
-                  class="w-6 mr-3"
+                  className="w-6 mr-3"
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
@@ -78,13 +78,13 @@ const Footer = () => {
                 </svg>
                 0114, თბილისი, I ხეივნის ქუჩის დასაწყისი
               </p>
-              <p class="flex items-center  md:justify-start mb-4">
+              <p className="flex items-center  md:justify-start mb-4">
                 <svg
                   aria-hidden="true"
                   focusable="false"
                   data-prefix="fas"
                   data-icon="envelope"
-                  class="w-4 mr-4"
+                  className="w-4 mr-4"
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -96,13 +96,13 @@ const Footer = () => {
                 </svg>
                 office@gcaa.ge
               </p>
-              <p class="flex items-center  md:justify-start mb-4">
+              <p className="flex items-center  md:justify-start mb-4">
                 <svg
                   aria-hidden="true"
                   focusable="false"
                   data-prefix="fas"
                   data-icon="phone"
-                  class="w-4 mr-4"
+                  className="w-4 mr-4"
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -116,13 +116,13 @@ const Footer = () => {
               </p>
             </div>
             <div>
-              <p class=" uppercase pt-4 mb-4 flex   md:justify-start">
+              <p className=" uppercase pt-4 mb-4 flex   md:justify-start">
                 დეპარტამენტის უფროსი:
               </p>
-              <p class="flex items-center  md:justify-start mb-4 ">
+              <p className="flex items-center  md:justify-start mb-4 ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6 mr-2"
+                  className="h-6 w-6 mr-2"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -134,13 +134,13 @@ const Footer = () => {
                 </svg>
                 აკაკი მაისაია
               </p>
-              <p class="flex items-center  md:justify-start mb-4">
+              <p className="flex items-center  md:justify-start mb-4">
                 <svg
                   aria-hidden="true"
                   focusable="false"
                   data-prefix="fas"
                   data-icon="envelope"
-                  class="w-4 mr-4"
+                  className="w-4 mr-4"
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -153,13 +153,13 @@ const Footer = () => {
                 UAS-GA@gcaa.ge
               </p>
             </div>
-            <p class="flex items-center  md:justify-start mb-4">
+            <p className="flex items-center  md:justify-start mb-4">
               <svg
                 aria-hidden="true"
                 focusable="false"
                 data-prefix="fas"
                 data-icon="phone"
-                class="w-4 mr-4"
+                className="w-4 mr-4"
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
